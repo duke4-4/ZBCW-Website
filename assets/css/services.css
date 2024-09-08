@@ -1,0 +1,187 @@
+
+
+
+.service-grid {
+  background: red !important;
+
+}
+ .service-title h4 {
+    margin-top: 10rem !important;
+    color: rgb(0,151,71) !important;
+  position: relative;
+  display: inline-block;
+}
+.service-icon {
+  position: relative;
+}
+.service-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+.about-info-text h2 {
+  /* margin-bottom: 23px; */
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: .9;
+}
+.about-info-text p {
+  padding: 0 100px;
+  font-size: 18px;
+  margin-bottom: 26px;
+    position: relative;
+}
+.about-content p {
+  margin-bottom: 0;
+}
+.about-info-text a {
+  margin-bottom: 20px;
+    position: relative;
+    text-decoration: #e8bc00 !important;
+}
+.service-icon i {
+  font-size: 40px;
+  color: #e8bc00;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.service-wrap {
+  border: 1px solid #e6e6e6;
+  padding: 50px 30px;
+    position: relative;
+}
+
+.service-wrap p{
+    position: relative;
+}
+
+.service-wrap:hover {
+  background-image: url(https://i.ibb.co/mykzQks/services1.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: local;
+  transition: all .5s;
+}
+
+.service-wrap:hover:before {
+  background: rgba(0, 0, 0, 0.2901960784313726);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  content: "";
+  top: 0;
+  opacity: 1;
+}
+
+.service-wrap:hover h4,.service-wrap:hover p{
+  color: #fff;
+}
+.service-wrap h4 {
+  font-weight: 600;
+  color: rgb(0,151,71) !important;
+
+  margin-bottom: 17px;
+  font-size: 18px;
+  text-transform: capitalize;
+    position: relative;
+}
+.service-wrap a {
+  font-size: 14px;
+  font-weight: 600;
+    position: relative;
+
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 74px;
+  background-color: rgb(0,151,71) !important;
+  box-shadow: 0 2px 40px solid black;
+  padding-block: 16px;
+  overflow: hidden;
+  /* transition: 0.35s ease-out; */
+  z-index: 4;
+}
+
+.header.nav-active {
+  height: 250px;
+  transition: 0.5s ease-out;
+}
+
+.header.active {
+  position: fixed;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo img { width: 7rem;
+height: 4rem; margin-top: -.6rem; }
+
+.nav-toggle-btn {
+  color: rgb(150,193,44);
+  font-size: 35px;
+  padding-inline: 5px;
+}
+
+.nav-toggle-btn .open,
+.nav-toggle-btn.active .close { display: block; }
+
+.nav-toggle-btn .close,
+.nav-toggle-btn.active .open { display: none; }
+
+.navbar {
+  position: absolute;
+  top: 70px;
+  align-items: center;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0,151,71);
+  padding-block: 5px;
+  
+  
+  
+  
+  /* visibility: hidden; */
+}
+
+.header.nav-active .navbar { visibility: visible; }
+
+.navbar-link {
+  color: white;
+  font-size: var(--fs-4);
+  font-weight: var(--fw-600);
+  padding: 6px 15px;
+  transition: var(--transition);
+  opacity: 0;
+  
+}
+
+.last{
+margin-bottom: 1rem !important;
+}
+.header.nav-active .navbar-link { opacity: 1; }
+
+.navbar-link:is(:hover, :focus) { color: rgb(150,193,44); }
+
+.header .btn { display: none; }
+
+
