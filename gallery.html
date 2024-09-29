@@ -11,15 +11,16 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./readme-images/be well.jpeg" type="image/svg+xml">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- <link rel="shortcut icon" href="./readme-images/be well.jpeg" type="image/svg+xml"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
 
   <!-- 
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/gallery.css">
+  <!-- <link rel="stylesheet" href="./assets/css/slider.css"> -->
 
   <!-- 
     - google font link
@@ -28,6 +29,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
     rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <style>
+      :root {
+        --background: #1A202C;
+        --foreground: #E2E8F0;
+        --primary: #2B6CB0;
+        --border: #4A5568;
+        --input: #2D3748;
+        --ring: #4299E1;
+        --primary-foreground: #E2E8F0;
+        --secondary: #2C5282;
+        --secondary-foreground: #E2E8F0;
+        --accent: #48BB78;
+        --accent-foreground: #2D3748;
+        --destructive: #E53E3E;
+        --destructive-foreground: #E2E8F0;
+        --muted: #718096;
+        --muted-foreground: #E2E8F0;
+        --card: #2D3748;
+        --card-foreground: #E2E8F0;
+        --popover: #2D3748;
+        --popover-foreground: #E2E8F0;
+      }
+    </style>
 </head>
 <body id="top">
     
@@ -83,50 +108,46 @@
 
     </div>
   </header>
-  <div class="grid-container"></div>
-  <div class="grid-item tall" style="background-image: url('https://picsum.photos/id/65/900/900.jpg')"></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/881/900/900.jpg');
-        "></div>
-
-  <div class="grid-item wide" style="
-          background-image: url('https://picsum.photos/id/248/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/423/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/534/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/664/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/176/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="background-image: url('https://picsum.photos/id/73/900/900.jpg')"></div>
-  <div class="grid-item tall wide" style="
-          background-image: url('https://picsum.photos/id/806/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/535/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/943/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/733/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/584/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/844/900/900.jpg');
-        "></div>
-  <div class="grid-item" style="
-          background-image: url('https://picsum.photos/id/160/900/900.jpg');
-        "></div>
-</div>
+   <body class="bg-background text-foreground" style="margin-top: 6rem;"></body>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
+      <div class="relative group">
+        <img src="./assets/images/blogpost1.jpg" alt="Image 1" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-red text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="./assets/images/blogpost4.jpg" alt="Image 2" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-white text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="./readme-images/about zbcw.jpg" alt="Image 3" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-white text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="./assets/images/blogpost3.jpg" alt="Image 4" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-white text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="./assets/images/blogpost2.jpg" alt="Image 5" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-white text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+      <div class="relative group">
+        <img src="./assets/images/blogpost1.jpg" alt="Image 6" class="w-full h-48 object-cover rounded-lg" />
+        <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
+          <button class="bg-white text-black px-4 py-2 rounded-lg">View</button>
+        </div>
+      </div>
+    </div>
+  </body>
 <footer class="footer">
 
     <div class="footer-top">
