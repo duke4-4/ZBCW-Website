@@ -3,217 +3,308 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zimbabwe Business Council on Wellness | Gallery</title>
+
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./readme-images/be well.jpeg" type="image/svg+xml"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+  <!-- 
+    - custom css link
+  -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+   <link href="https://unpkg.com/tailwindcss@^3.0/dist/tailwind.min.css" rel="stylesheet">
+   <link
+  rel="stylesheet"
+  href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"
+/>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/gallery.css">
+  <!-- <link rel="stylesheet" href="./assets/css/slider.css"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-    <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
-		<script src="https://unpkg.com/unlazy@0.11.3/dist/unlazy.with-hashing.iife.js" defer init></script>
-		<script type="text/javascript">
-			window.tailwind.config = {
-				darkMode: ['class'],
-				theme: {
-					extend: {
-						colors: {
-							border: 'hsl(var(--border))',
-							input: 'hsl(var(--input))',
-							ring: 'hsl(var(--ring))',
-							background: 'hsl(var(--background))',
-							foreground: 'hsl(var(--foreground))',
-							primary: {
-								DEFAULT: 'hsl(var(--primary))',
-								foreground: 'hsl(var(--primary-foreground))'
-							},
-							secondary: {
-								DEFAULT: 'hsl(var(--secondary))',
-								foreground: 'hsl(var(--secondary-foreground))'
-							},
-							destructive: {
-								DEFAULT: 'hsl(var(--destructive))',
-								foreground: 'hsl(var(--destructive-foreground))'
-							},
-							muted: {
-								DEFAULT: 'hsl(var(--muted))',
-								foreground: 'hsl(var(--muted-foreground))'
-							},
-							accent: {
-								DEFAULT: 'hsl(var(--accent))',
-								foreground: 'hsl(var(--accent-foreground))'
-							},
-							popover: {
-								DEFAULT: 'hsl(var(--popover))',
-								foreground: 'hsl(var(--popover-foreground))'
-							},
-							card: {
-								DEFAULT: 'hsl(var(--card))',
-								foreground: 'hsl(var(--card-foreground))'
-							},
-						},
-					}
-				}
-			}
-		</script>
-		<style type="text/tailwindcss">
-			@layer base {
-				:root {
-					--background: 0 0% 100%;
---foreground: 240 10% 3.9%;
---card: 0 0% 100%;
---card-foreground: 240 10% 3.9%;
---popover: 0 0% 100%;
---popover-foreground: 240 10% 3.9%;
---primary: 240 5.9% 10%;
---primary-foreground: 0 0% 98%;
---secondary: 240 4.8% 95.9%;
---secondary-foreground: 240 5.9% 10%;
---muted: 240 4.8% 95.9%;
---muted-foreground: 240 3.8% 46.1%;
---accent: 240 4.8% 95.9%;
---accent-foreground: 240 5.9% 10%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 0 0% 98%;
---border: 240 5.9% 90%;
---input: 240 5.9% 90%;
---ring: 240 5.9% 10%;
---radius: 0.5rem;
-				}
-				.dark {
-					--background: 240 10% 3.9%;
---foreground: 0 0% 98%;
---card: 240 10% 3.9%;
---card-foreground: 0 0% 98%;
---popover: 240 10% 3.9%;
---popover-foreground: 0 0% 98%;
---primary: 0 0% 98%;
---primary-foreground: 240 5.9% 10%;
---secondary: 240 3.7% 15.9%;
---secondary-foreground: 0 0% 98%;
---muted: 240 3.7% 15.9%;
---muted-foreground: 240 5% 64.9%;
---accent: 240 3.7% 15.9%;
---accent-foreground: 0 0% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 0 0% 98%;
---border: 240 3.7% 15.9%;
---input: 240 3.7% 15.9%;
---ring: 240 4.9% 83.9%;
-				}
-			}
-		</style>
-  </head>
-  <body>
-    <div class="services-container flex flex-row gap-2">
-               
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 ">
-  <div class="relative group">
-    <div class="cursor-pointer" onclick="expandImage('Image 1', 'Beautiful Sunset', 'Vibrant colors painting the sky as the sun sets')">
-      <img src="https://placehold.co/400x225?text=Image+1" alt="Image 1" class="w-full h-48 object-cover rounded-lg" />
-      <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
-        <div class="text-white text-center">
-          <h3 class="text-lg font-semibold">Beautiful Sunset</h3>
-          <p class="text-sm">Vibrant colors painting the sky as the sun sets</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div id="expandedImageModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
-  <div class="max-w-3xl w-full mx-4 bg-white rounded-lg p-8">
-    <button onclick="closeExpandedImage()" class="absolute top-4 right-4 text-zinc-500 hover:text-zinc-700 focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-    <h3 id="expandedImageTitle" class="text-2xl font-semibold text-center mb-4"></h3>
-    <img id="expandedImage" src="" alt="" class="w-full h-96 object-cover rounded-lg mb-4" />
-    <p id="expandedImageDescription" class="text-lg text-center"></p>
-  </div>
-</div>
-
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 p-4 ">
-  <div class="relative group">
-    <div class="cursor-pointer" onclick="expandImage('Image 1', 'Beautiful Sunset', 'Vibrant colors painting the sky as the sun sets')">
-      <img src="https://placehold.co/400x225?text=Image+1" alt="Image 1" class="w-full h-48 object-cover rounded-lg" />
-      <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
-        <div class="text-white text-center">
-          <h3 class="text-lg font-semibold">Beautiful Sunset</h3>
-          <p class="text-sm">Vibrant colors painting the sky as the sun sets</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    </div>
+<body id="top">
     
-<div id="expandedImageModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
-  <div class="max-w-3xl w-full mx-4 bg-white rounded-lg p-8">
-    <button onclick="closeExpandedImage()" class="absolute top-4 right-4 text-zinc-500 hover:text-zinc-700 focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-    <h3 id="expandedImageTitle" class="text-2xl font-semibold text-center mb-4"></h3>
-    <img id="expandedImage" src="" alt="" class="w-full h-96 object-cover rounded-lg mb-4" />
-    <p id="expandedImageDescription" class="text-lg text-center"></p>
-  </div>
-</div>
+  <header class="header" data-header>
+    <div class="container">
 
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4">
-  <div class="relative group">
-    <div class="cursor-pointer" onclick="expandImage('Image 1', 'Beautiful Sunset', 'Vibrant colors painting the sky as the sun sets')">
-      <img src="https://placehold.co/400x225?text=Image+1" alt="Image 1" class="w-full h-48 object-cover rounded-lg" />
-      <div class="hidden group-hover:block absolute inset-0 bg-black bg-opacity-50 rounded-lg flex items-center justify-center">
-        <div class="text-white text-center">
-          <h3 class="text-lg font-semibold">Beautiful Sunset</h3>
-          <p class="text-sm">Vibrant colors painting the sky as the sun sets</p>
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" alt="ZBCW logo">
+      </a>
+    
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+        <div class="container">
+          <ul class="navbar-list">
+
+            <li>
+              <a href="./index.html" class="navbar-link" data-navbar-link>Home</a>
+            </li>
+
+            <li>
+              <a href="./about.html" class="navbar-link" data-navbar-link>About Us</a>
+            </li>
+
+            <li>
+              <a href="./services.html" class="navbar-link" data-navbar-link>Service</a>
+            </li>
+
+            <li>
+              <a href="./news.html" class="navbar-link" data-navbar-link>News</a>
+            </li>
+            <li>
+              <a href="./gallery.html" class="navbar-link" data-navbar-link>Gallery</a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="navbar-link last" data-navbar-link>Contact</a>
+            </li>
+
+          </ul>
         </div>
+      </nav>
+
+      <button class="btn btn-secondary">
+        <span>Get in touch</span>
+
+        <ion-icon name="chevron-forward-outline"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+ <div class="relative h-screen w-full flex items-center justify-center bg-cover bg-center text-center px-5"
+    style="background-image:url(https://images.pexels.com/photos/260689/pexels-photo-260689.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500);">
+    <div class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 opacity-75"></div>
+
+    <div class="z-50 flex flex-col justify-center text-white w-full h-screen">
+        <h1 class="text-3xl">We are <b>Almost</b> there!</h1>
+        <p>Stay tuned for something amazing!!!</p>
+
+        <div class="mt-10 mb-5">
+            <div class="shadow w-full bg-white mt-2 max-w-2xl mx-auto rounded-full">
+                <div class="rounded-full bg-indigo-600 text-xs leading-none text-center text-white py-1"
+                    style="width: 75%">75%</div>
+            </div>
+        </div>
+
+        <div class="mt-6 flex text-white mx-auto">
+            <a href="#">
+                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                    xmlns:serif="http://www.serif.com/"
+                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                    <path id="Twitter" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  5.373,-12 12,-12c6.627,0 12,5.373 12,12Zm-6.465,-3.192c-0.379,0.168
+                  -0.786,0.281 -1.213,0.333c0.436,-0.262 0.771,-0.676
+                  0.929,-1.169c-0.408,0.242 -0.86,0.418 -1.341,0.513c-0.385,-0.411
+                  -0.934,-0.667 -1.541,-0.667c-1.167,0 -2.112,0.945 -2.112,2.111c0,0.166
+                  0.018,0.327 0.054,0.482c-1.754,-0.088 -3.31,-0.929
+                  -4.352,-2.206c-0.181,0.311 -0.286,0.674 -0.286,1.061c0,0.733 0.373,1.379
+                  0.94,1.757c-0.346,-0.01 -0.672,-0.106 -0.956,-0.264c-0.001,0.009
+                  -0.001,0.018 -0.001,0.027c0,1.023 0.728,1.877 1.694,2.07c-0.177,0.049
+                  -0.364,0.075 -0.556,0.075c-0.137,0 -0.269,-0.014 -0.397,-0.038c0.268,0.838
+                  1.048,1.449 1.972,1.466c-0.723,0.566 -1.633,0.904 -2.622,0.904c-0.171,0
+                  -0.339,-0.01 -0.504,-0.03c0.934,0.599 2.044,0.949 3.237,0.949c3.883,0
+                  6.007,-3.217 6.007,-6.008c0,-0.091 -0.002,-0.183 -0.006,-0.273c0.413,-0.298
+                  0.771,-0.67 1.054,-1.093Z"></path>
+                </svg>
+            </a>
+            <a href="/#">
+                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                    xmlns:serif="http://www.serif.com/"
+                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                    <path id="Facebook" d="M24,12c0,6.627 -5.373,12 -12,12c-6.627,0 -12,-5.373 -12,-12c0,-6.627
+                  5.373,-12 12,-12c6.627,0 12,5.373
+                  12,12Zm-11.278,0l1.294,0l0.172,-1.617l-1.466,0l0.002,-0.808c0,-0.422
+                  0.04,-0.648 0.646,-0.648l0.809,0l0,-1.616l-1.295,0c-1.555,0 -2.103,0.784
+                  -2.103,2.102l0,0.97l-0.969,0l0,1.617l0.969,0l0,4.689l1.941,0l0,-4.689Z"></path>
+                </svg>
+            </a>
+            <a href="/#">
+                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                    xmlns:serif="http://www.serif.com/"
+                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                    <path id="Shape" d="M7.3,0.9c1.5,-0.6 3.1,-0.9 4.7,-0.9c1.6,0 3.2,0.3 4.7,0.9c1.5,0.6 2.8,1.5
+                  3.8,2.6c1,1.1 1.9,2.3 2.6,3.8c0.7,1.5 0.9,3 0.9,4.7c0,1.7 -0.3,3.2
+                  -0.9,4.7c-0.6,1.5 -1.5,2.8 -2.6,3.8c-1.1,1 -2.3,1.9 -3.8,2.6c-1.5,0.7
+                  -3.1,0.9 -4.7,0.9c-1.6,0 -3.2,-0.3 -4.7,-0.9c-1.5,-0.6 -2.8,-1.5
+                  -3.8,-2.6c-1,-1.1 -1.9,-2.3 -2.6,-3.8c-0.7,-1.5 -0.9,-3.1 -0.9,-4.7c0,-1.6
+                  0.3,-3.2 0.9,-4.7c0.6,-1.5 1.5,-2.8 2.6,-3.8c1.1,-1 2.3,-1.9
+                  3.8,-2.6Zm-0.3,7.1c0.6,0 1.1,-0.2 1.5,-0.5c0.4,-0.3 0.5,-0.8 0.5,-1.3c0,-0.5
+                  -0.2,-0.9 -0.6,-1.2c-0.4,-0.3 -0.8,-0.5 -1.4,-0.5c-0.6,0 -1.1,0.2
+                  -1.4,0.5c-0.3,0.3 -0.6,0.7 -0.6,1.2c0,0.5 0.2,0.9 0.5,1.3c0.3,0.4 0.9,0.5
+                  1.5,0.5Zm1.5,10l0,-8.5l-3,0l0,8.5l3,0Zm11,0l0,-4.5c0,-1.4 -0.3,-2.5
+                  -0.9,-3.3c-0.6,-0.8 -1.5,-1.2 -2.6,-1.2c-0.6,0 -1.1,0.2 -1.5,0.5c-0.4,0.3
+                  -0.8,0.8 -0.9,1.3l-0.1,-1.3l-3,0l0.1,2l0,6.5l3,0l0,-4.5c0,-0.6 0.1,-1.1
+                  0.4,-1.5c0.3,-0.4 0.6,-0.5 1.1,-0.5c0.5,0 0.9,0.2 1.1,0.5c0.2,0.3 0.4,0.8
+                  0.4,1.5l0,4.5l2.9,0Z"></path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg fill="currentColor" class="cursor-pointer h-6 mr-2" viewBox="0 0 24 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve"
+                    xmlns:serif="http://www.serif.com/"
+                    style="fill-rule: evenodd; clip-rule: evenodd; stroke-linejoin: round; stroke-miterlimit: 2;">
+                    <path id="Combined-Shape" d="M12,24c6.627,0 12,-5.373 12,-12c0,-6.627 -5.373,-12 -12,-12c-6.627,0
+                  -12,5.373 -12,12c0,6.627 5.373,12 12,12Zm6.591,-15.556l-0.722,0c-0.189,0
+                  -0.681,0.208 -0.681,0.385l0,6.422c0,0.178 0.492,0.323
+                  0.681,0.323l0.722,0l0,1.426l-4.675,0l0,-1.426l0.935,0l0,-6.655l-0.163,0l-2.251,8.081l-1.742,0l-2.222,-8.081l-0.168,0l0,6.655l0.935,0l0,1.426l-3.74,0l0,-1.426l0.519,0c0.203,0
+                  0.416,-0.145 0.416,-0.323l0,-6.422c0,-0.177 -0.213,-0.385
+                  -0.416,-0.385l-0.519,0l0,-1.426l4.847,0l1.583,5.704l0.042,0l1.598,-5.704l5.021,0l0,1.426Z"></path>
+                </svg>
+            </a>
+        </div>
+
+
+    </div>
+
+</div>
+<footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" alt="zbcw logo">
+          </a>
+
+          <p class="section-text">This year (2024) marks ZBCW’s 20th Anniversary and various activities will be conducted to mark this important milestone</p>
+
+          <div class="location-text">
+            <div class="location-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="address">
+              1 Kenilworth Road, Newlands, Harare
+            </address>
+          </div>
+
+        </div>
+
+        <div class="quicklink-box">
+          <p class="h3 quicklink-title">Quick links</p>
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink">About ZBCW</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">ZBCW Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Wellness Programs</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Advisory</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Program Development</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink">Events</a>
+            </li>
+
+            
+          </ul>
+        </div>
+
+        <div class="contact">
+          <p class="h3 contact-title">Get in touch with us</p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a href="mailto:info@zimbcw.co.zw" class="contact-link">info@zimbcw.co.zw</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="tel:0242338885" class="contact-link">+263 772 403 007</a>
+            </li>
+
+          </ul>
+        </div>
+
       </div>
     </div>
-  </div>
-</div>
 
-<div id="expandedImageModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-90 flex items-center justify-center z-50 hidden">
-  <div class="max-w-3xl w-full mx-4 bg-white rounded-lg p-8">
-    <button onclick="closeExpandedImage()" class="absolute top-4 right-4 text-zinc-500 hover:text-zinc-700 focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-    <h3 id="expandedImageTitle" class="text-2xl font-semibold text-center mb-4"></h3>
-    <img id="expandedImage" src="" alt="" class="w-full h-96 object-cover rounded-lg mb-4" />
-    <p id="expandedImageDescription" class="text-lg text-center"></p>
-  </div>
-</div>
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 ZBCW</a>. All Rights Reserved
+        </p>
+
+        
+
+      </div>
+      
     </div>
- 
-<script>
-  function expandImage(title, description, altText) {
-    const modal = document.getElementById('expandedImageModal');
-    const modalTitle = document.getElementById('expandedImageTitle');
-    const modalDescription = document.getElementById('expandedImageDescription');
-    const modalImage = document.getElementById('expandedImage');
-    modalTitle.textContent = title;
-    modalDescription.textContent = description;
-    modalImage.src = `https://placehold.co/800x450?text=${altText}`;
 
-    modal.classList.remove('hidden');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeExpandedImage() {
-    const modal = document.getElementById('expandedImageModal');
-    modal.classList.add('hidden');
-    document.body.style.overflow = 'auto';
-  }
-</script>
+  </footer>
 
 
-  </body>
-</html>
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top active" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 </html>
