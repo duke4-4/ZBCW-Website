@@ -272,7 +272,7 @@ margin-bottom: 1rem !important;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
-  background-image: url('/readme-images/Picture1.jpg')!important;
+  background-image: url('/readme-images/Picture1.jpg');
   background-position: center;
   background-size: cover;
   
